@@ -44,3 +44,5 @@ Seeing the schematic finally come together feels really satisfying and everythin
 #### NOW  IT'S READY FOR THE PCB LAYOUT  , ( BUT FIRS I NEED SOME REST, MY BACK IS PAINING)
 
 My next step is arranging the components neatly on the PCB . I'm getting much closer to having my first custom keyboard PCB ready for manufacturing.
+## 📐 Arranging the PCB
+I placed the switches according to my Alice layout first because they were the most important parts. After that I arranged the OLED, encoder, joystick, USB-C connector, microcontroller and the smaller components around them.
