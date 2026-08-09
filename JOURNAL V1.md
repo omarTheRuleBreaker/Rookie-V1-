@@ -21,7 +21,8 @@ I started with the matrix and made a lot of nice progress with tracing and conne
 It's easily subject to change after I add the rotary encoder. I'm not exactly sure how I'm supposed to incorporate the encoder right now. All of the other components are pretty simple it just took me some time to connect other componets see
 see u later, bye                                                                                    
 
-I have finished my RGB light matrix thingyy , and I was having some  ERRORS while arranging my RGB BACKLIGHT (Matrix) called the   "Input power pin not driven by any Output power pins" and its telling to  Add  PWR_FLAG (its purely a schematic validation tool) ,  near +5v power net line and it  WORKED  (Cleared all the Errors)                                
+I have finished my RGB light matrix thingyy , and I was having some  ERRORS while arranging my RGB BACKLIGHT (Matrix) called the   "Input power pin not driven by any Output power pins" and its telling to  Add  PWR_FLAG (its purely a schematic validation tool) ,  near +5v power net line and it  WORKED  (Cleared all the Errors)    
+(UPDATE FOR THiS PROBLEM:- It can also be solved after I connected my 5v to VBUS on Raspberry Pi poco so there was no need for PWR_flag )
 <img width="824" height="565" alt="image" src="https://github.com/user-attachments/assets/d199213e-dd65-445d-975f-5bd75159b55b" />
 <img width="623" height="384" alt="image" src="https://github.com/user-attachments/assets/83f04c98-e525-4b72-b055-d60e63be806a" />
 
@@ -30,8 +31,14 @@ I have finished my RGB light matrix thingyy , and I was having some  ERRORS whil
 Wired up the EC11 encoder (A/B/C for rotation, S1/S2 for the click). Also connected the joystick analog it was preety simple to connect then, Spent a while figuring out OLED options — I wanted A looong screen put apparently 4 pin OLEDs don't come in 256x32, so I had to settle for a 128x32 display,  which gave a me a bit more surface area. here's a LOOK!
 <img width="769" height="582" alt="image" src="https://github.com/user-attachments/assets/cc9e7f90-6eb1-41f3-a087-e7e7c042cb34" />
 I still need to connect all the components (some parts like :- key matrix, RGB matrix thingyy and etc.) and almost  forgot add  stabilizer and mounting holes and also need to assign the footprints for the components
-OKAY! the only things I need to do is assign footprints and solve some ERC ERRORS ( Electric Rules Checker ) ,  heres how my schematic looks 
+OKAY! the only things I need to do is assign footprints and solve some ERC ERRORS ( Electric Rules Checker ) , 
+heres how my schematic looks 
 <img width="1257" height="489" alt="SVHEMATIC FULL PIC" src="https://github.com/user-attachments/assets/345f3c25-c65e-4a40-9b5f-2f7fb21d440c" />
+
+## 🔧 Assigning Footprints
+The schematic is mostly finished, I started assigning footprints to the components. This was a little confusing at first because I learned that the symbol in the schematic and the actual footprint on the PCB are different things. I used the KiCad libraries and the ai03 keyboard library (Downloaded from GitHub) to find suitable footprints for the switches, stabilizers and other components.
+
+
 # Okay it's me after many  hours later :- 
 Wasup people !  I am  glad to announce that I have FINISHED my PCB SCHEMATIC after working continuousley on it  , LETS GO! 
 After spending a lot of time checking connections and making sure every component was placed correctly ,  I made tremendous progress with the Schematic and was able to complete it , everything went extremely well this session. 
@@ -43,6 +50,8 @@ Seeing the schematic finally come together feels really satisfying and everythin
 
 #### NOW  IT'S READY FOR THE PCB LAYOUT  , ( BUT FIRS I NEED SOME REST, MY BACK IS PAINING)
 
-My next step is arranging the components neatly on the PCB . I'm getting much closer to having my first custom keyboard PCB ready for manufacturing.
-## 📐 Arranging the PCB
-I placed the switches according to my Alice layout first because they were the most important parts. After that I arranged the OLED, encoder, joystick, USB-C connector, microcontroller and the smaller components around them.
+## Entry 3 — MAKING my PCB
+
+### 📐 Arranging the PCB
+After assigning the footprints, I moved everything from the schematic into the PCB Editor. At first there were components everywhere with ratsnest lines connecting each other it was very confusing at first when I started arranging the components neatly on the PCB manually according to my Alice layout. So, first I placed the switches according to my Alice layout  because they were the most important parts. After that I arranged the OLED, Rotary encoder, Joystick, Micro controller ( Raspberry Pi Pico ) and the smaller components around them (stabilizer, mounting holes).
+
