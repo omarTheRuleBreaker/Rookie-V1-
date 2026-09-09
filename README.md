@@ -1,88 +1,16 @@
 # Rookie-V1
-Hi, I am making a cool keyboard from scratch 
-⌨️ My Custom Alice Mechanical Keyboard
+Hi, I am making a cool Custom Keyboard from scratch, by myself
 
-My first custom mechanical keyboard project! 😎
+This is my custom 65% Alice layout keyboard that I’m designing from scratch. I started with watching some YOUTUBE videos and also took some help of AI for boosting up my Knowledge.
 
-I'm designing and building a 65% Alice-style mechanical keyboard from scratch. The goal is to learn how a keyboard works from the schematic all the way to the final PCB and firmware.
+then I worked on schematic of the keyboard matrix, diodes, switches,  OLED display, Joystick, and the other components.
+After finishing the schematic, I moved on to designing the PCB. I arranged the components, worked on the routing, and checked the connections and DRC errors to make sure everything was correct.
 
-✨ Features
+This project is helping me learn more about PCB design, KiCad, and how a keyboard actually works from the schematic to the final PCB.
 
-- ⌨️ 65% Alice-style layout
-- 🔧 MX-style mechanical switches
-- 🔢 Custom keyboard matrix with diodes
-- 🎛️ Rotary encoder
-- 🖥️ OLED display
-- 🕹️ Joystick for mouse control
-- 🔌 USB Type-C
-- 🧠 RP2040 / Raspberry Pi Pico
-- 🛠️ Custom PCB designed in KiCad
-- 🎨 Custom PCB/keyboard design
-
-🛠️ What I'm Using
-
-Software
-
-- KiCad
-- CAD software for the case
-- Keyboard firmware tools
-
-Main Hardware
-
-- RP2040 / Raspberry Pi Pico
-- MX-style switches
-- Diodes
-- OLED display
-- Rotary encoder
-- Analog joystick
-- USB Type-C connector
-- Resistors and capacitors
-
-🔨 Project Progress
-
-- [x] Plan keyboard layout
-- [x] Design Alice layout
-- [x] Make keyboard schematic
-- [x] Add keyboard matrix and diodes
-- [x] Add extra components
-- [x] Assign footprints
-- [x] Move design to PCB Editor
-- [x] Arrange components
-- [x] Create PCB outline
-- [x] Route PCB
-- [x] Run DRC
-- [ ] Final PCB checks
-- [ ] Generate Gerbers
-- [ ] Manufacture PCB
-- [ ] Assemble keyboard
-- [ ] Build case
-- [ ] Write/flash firmware
-- [ ] Test everything
-
-📁 Repository
-
-My-Alice-Keyboard/
-├── KiCad/
-├── CAD/
-├── Firmware/
-├── Images/
-├── Gerbers/
-├── BOM/
-├── JOURNAL.md
-└── README.md
-
-📓 Journal
-
-I'm documenting the whole process in my "JOURNAL.md" (JOURNAL.md), from the first layout and schematic to PCB design, routing, DRC and eventually the final build.
-
-🎯 Goal
-
-The main goal of this project is to learn PCB and keyboard design by actually building one myself.
-
-Idea → Schematic → PCB → Manufacturing → Assembly → Firmware → Working Keyboard 🚀
-
-This is my first custom keyboard, so I'm learning as I go and documenting the mistakes, problems and things I figure out along the way.
-
----
-
-Made by me while learning PCB & keyboard design 🦾
+### WHAT I LEARNED
+Not gonna lie I learned many things it was a life time experience and next time I make an PCB for some other project it's  gonna be easy for me I learned shortcuts that will save me time and also made some friend's on SLACK that helped me , 
+also #SHOUTOUT to @Flyingfish  AND also THX to them who were  part of my journey.
+- Here's what I really learned :
+  
+I learned how to turn a keyboard schematic into a proper PCB and how important it is to check every connection before moving forward. I also learned how to arrange components properly, route traces, use vias, and fix DRC errors in KiCad. Working on this project helped me understand more about PCB design and how all the different parts of a keyboard connect and work together.
