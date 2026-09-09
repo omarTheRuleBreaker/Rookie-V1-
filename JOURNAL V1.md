@@ -20,7 +20,7 @@ I started with the matrix and made a lot of nice progress with tracing and conne
 
 ### Adding the Other Components
 
-After the main keyboard matrix was done, I added the extra features I wanted. I added an OLED for displaying information, a rotary encoder for things like volume or scrolling, and a joystick that I can use for mouse control. I also added resistors and capacitors for the RGB . I considered adding some other things during the project, but I removed or changed a few ideas to keep thekeyboard manageable.                                     
+After the main keyboard matrix was done, I added the extra features I wanted. I added an OLED for displaying information and a joystick that I can use for mouse control. I also added resistors and capacitors for the RGB . I considered adding some other things during the project, but I removed or changed a few ideas to keep the keyboard manageable.                                     
 It's easily subject to change after I add the rotary encoder. I'm not exactly sure how I'm supposed to incorporate the encoder right now. All of the other components are pretty simple it just took me some time to connect other componets see
 see u later, bye                                                                                    
 
@@ -36,10 +36,10 @@ I still need to connect all the components (some parts like :- key matrix, RGB m
 OKAY! the only things I need to do is assign footprints and solve some ERC ERRORS ( Electric Rules Checker ) , 
 heres how my schematic looks 
 <img width="1257" height="489" alt="SVHEMATIC FULL PIC" src="https://github.com/user-attachments/assets/345f3c25-c65e-4a40-9b5f-2f7fb21d440c" />
+### UPDATE: I have removed the rotary encoder due to less GPIO pins
 
 ## Assigning Footprints
 The schematic is mostly finished, I started assigning footprints to the components. This was a little confusing at first because I learned that the symbol in the schematic and the actual footprint on the PCB are different things. I used the KiCad libraries and the ai03 keyboard library (Downloaded from GitHub) to find suitable footprints for the switches, stabilizers and other components.
-
 
 # Okay it's me after many  hours later :- 
 Wasup people !  I am  glad to announce that I have FINISHED my PCB SCHEMATIC after working continuousley on it  , LETS GO! 
