@@ -37,7 +37,7 @@ OKAY! the only things I need to do is assign footprints and solve some ERC ERROR
 heres how my schematic looks 
 <img width="1257" height="489" alt="SVHEMATIC FULL PIC" src="https://github.com/user-attachments/assets/345f3c25-c65e-4a40-9b5f-2f7fb21d440c" />
 
-## 🔧 Assigning Footprints
+## Assigning Footprints
 The schematic is mostly finished, I started assigning footprints to the components. This was a little confusing at first because I learned that the symbol in the schematic and the actual footprint on the PCB are different things. I used the KiCad libraries and the ai03 keyboard library (Downloaded from GitHub) to find suitable footprints for the switches, stabilizers and other components.
 
 
@@ -54,6 +54,60 @@ Seeing the schematic finally come together feels really satisfying and everythin
 
 ## Entry 3 — MAKING my PCB
 
-### 📐 Arranging the PCB
+##  Arranging the PCB
 After assigning the footprints, I moved everything from the schematic into the PCB Editor. At first there were components everywhere with ratsnest lines connecting each other it was very confusing at first when I started arranging the components neatly on the PCB manually according to my Alice layout. So, first I placed the switches according to my Alice layout  because they were the most important parts. After that I arranged the OLED, Rotary encoder, Joystick, Micro controller ( Raspberry Pi Pico ) and the smaller components around them (stabilizer, mounting holes).
+
+## Routing the PCB :-
+
+After arranging all the components on the PCB, I started working on routing the traces.
+The ratsnest lines showed me which components still needed to be electrically connected. My goal was to route these connections while keeping the PCB neat and avoiding unnecessary overlaps.
+
+#### Keyboard Matrix :-
+So I first focused on the keyboard matrix connections, routing the traces between the switches and diodes. Since there were many connections it took me some time to get there.
+Now for the Oled display, Joystick, RGB LEDs and Raspberry Pi Pico
+After routing the matrix, I worked on the connections for the Oled display, Joystick, RGB LEDs and **Raspberry Pi Pico. **
+OLED and Joystick were easy but the       RGB Leds took me a lot of time to complete
+
+#### RGB LED Routing :-
+The RGB LEDs required additional routing because each LED needed connections for power, ground, data input, and data output.
+I connected the LEDs in sequence so that the RGB data signal could travel from one LED to the next.
+
+#### Power and Ground :-
+I paid extra attention to the power connections because the RGB LEDs can draw significantly more current than the other components.
+I also had to think about the different power connections, especially the 5V, 3.3V, and l also kept the size of the power line (5v,3v3) a bit thicker 0.3 or 0.4 cause it prevents the melting of the copper
+ If l am right
+I tried to keep the power routing clean and make sure the traces had suitable paths 
+And for the GND (Ground Plate) l did not connect it manually thanks to an friend l got to know if we add GND plate it will connect all the GND's all by itself, So that saved me some time rather rha  doing it manually 
+
+- PCB Layers :-
+- F.cu  (Red)
+- B.cu (Blue)
+- Vias (Dots kinda thing that lets u use both layers)
+This made routing much easier,and thees are the layers l used  
+Keyboard Matrix , Rgb , Joystick  , Display -} u can check out my file from folder called  PCB theres a file called PCB Editor downloadit and clear ur doubts
+
+Routing All Connections To  Raspberry Pico PI :-
+Well this was preety easy , l just need to route the  connections of Keyboard Matrix (Rows and Columns) , Rgb  to  there GPIO pins on the Pico Pi
+( Joystick and OLED was already done) 
+
+#### DRC Errors for PCB :-
+After completing most of the routing, I ran the Design Rules Checker (DRC) in KiCad to look for problems such as:
+Unconnected connections
+Clearance violations
+Overlapping or conflicting tracks
+
+I then went back and fixed the errors that appeared It was no sweat just some text were intersecting with dome part and some layer like dots that l mistakenly added just delete those 
+At this point, the PCB was starting to look GREAT 👍🏻 
+Next step: To add its shape
+
+#### SHAPE OF THE PCB :-
+Like this was preety much easy to just selected the layer Edge Cut and put lines accordingly to my reference pic at top , l can also just make it an rectangular box but i just chose that cause while l design my case it will give me an idea for the perimeter ig
+And after that it was good to go 
+3D (keycaps , hotswapp , display , Joystick )
+I added there 3d models from GrabCAD so l can get a preety good look how my Keyboard going to look and it also helps me to know  how much height should be the walls (boarders) of the case. 
+
+####  Last look of the PCB
+Well , l am relieved and the last step is just to make an case for it 
+Cant wait to finish it  and look how it turns out, supper dupper excited.      
+SO LETS GET GOING ,BYE      
 
