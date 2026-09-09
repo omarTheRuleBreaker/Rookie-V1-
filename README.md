@@ -10,7 +10,8 @@ This project is helping me learn more about PCB design, KiCad, and how a keyboar
 
 ### WHAT I LEARNED
 Not gonna lie I learned many things it was a life time experience and next time I make an PCB for some other project it's  gonna be easy for me I learned shortcuts that will save me time and also made some friend's on SLACK that helped me , 
-also #SHOUTOUT to @Flyingfish  AND also THX to them who were  part of my journey.
+also #SHOUTOUT to @Flyingfish he saved me some time AND also THX to them who were  part of my journey.
 - Here's what I really learned :
   
 I learned how to turn a keyboard schematic into a proper PCB and how important it is to check every connection before moving forward. I also learned how to arrange components properly, route traces, use vias, and fix DRC errors in KiCad. Working on this project helped me understand more about PCB design and how all the different parts of a keyboard connect and work together.
+gracias!
