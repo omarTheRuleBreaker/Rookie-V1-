@@ -13,10 +13,13 @@ I also made my  layout in https://www.keyboard-layout-editor.com/
 ## Entry 2 — MAKING my SCHEMATIC
 Date: 7/26/2026
 
-Today I started making my first keyboard schematic in KiCad. First, I added all the symbols from the symbol library, like the switches, diodes, SK6812 RGB LEDs, Raspberry Pi Pico, OLED, and the joystick so it will look cool                             <img width="22" height="22" alt="image" src="https://github.com/user-attachments/assets/5d66d161-8bd5-44ad-8ee7-96906f66c585" />
+Today I started making my first keyboard schematic in KiCad. First, I added all the symbols from the symbol library, like the switches, diodes, SK6812 RGB LEDs, Raspberry Pi Pico, OLED, and the joystick so it will look cool                           
+<img width="22" height="22" alt="image" src="https://github.com/user-attachments/assets/5d66d161-8bd5-44ad-8ee7-96906f66c585" />.
 .
 I started with the matrix and made a lot of nice progress with tracing and connecting the other components. I also fixed some wiring and checked that everything was connected properly.
-<img width="1002" height="563" alt="Screenshot 2026-07-02 200518" src="https://github.com/user-attachments/assets/bf523c0f-eae4-4e9e-9f60-8de163b7509a" />                                               
+<img width="1057" height="370" alt="image" src="https://github.com/user-attachments/assets/82570bed-373c-4c8e-8002-317c12303986" />
+
+                                             
 
 ### Adding the Other Components
 
@@ -34,20 +37,22 @@ Wired up the EC11 encoder (A/B/C for rotation, S1/S2 for the click). Also connec
 <img width="769" height="582" alt="image" src="https://github.com/user-attachments/assets/cc9e7f90-6eb1-41f3-a087-e7e7c042cb34" />
 I still need to connect all the components (some parts like :- key matrix, RGB matrix thingyy and etc.) and almost  forgot add  stabilizer and mounting holes and also need to assign the footprints for the components
 OKAY! the only things I need to do is assign footprints and solve some ERC ERRORS ( Electric Rules Checker ) , 
-heres how my schematic looks 
-<img width="1257" height="489" alt="SVHEMATIC FULL PIC" src="https://github.com/user-attachments/assets/345f3c25-c65e-4a40-9b5f-2f7fb21d440c" />
-### UPDATE: I have removed the rotary encoder due to less GPIO pins
+
+<img width="675" height="437" alt="image" src="https://github.com/user-attachments/assets/939c21b6-cff7-426c-b35e-6d89d0860a57" />
+
+### UPDATE: I have removed the Rotary Encoder due to less GPIO pins
 
 ## Assigning Footprints
 The schematic is mostly finished, I started assigning footprints to the components. This was a little confusing at first because I learned that the symbol in the schematic and the actual footprint on the PCB are different things. I used the KiCad libraries and the ai03 keyboard library (Downloaded from GitHub) to find suitable footprints for the switches, stabilizers and other components.
 
 # Okay it's me after many  hours later :- 
-Wasup people !  I am  glad to announce that I have FINISHED my PCB SCHEMATIC after working continuousley on it  , LETS GO! 
+Wasup people !  I am  glad to announce that I have FINISHED my PCB SCHEMATIC after working Continuously on it  , LETS GO! 
 After spending a lot of time checking connections and making sure every component was placed correctly ,  I made tremendous progress with the Schematic and was able to complete it , everything went extremely well this session. 
 I implemented resistors and capacitors wherever I needed them I was able to complete the entire schematic. I also assigned footprints to all the components. Along the way I learned a lot about how different parts connect together and fixed several small mistakes that were causing errors.
 HERE ARE SOME PIC OF FINAL LOOK :- 
-###### *TOTAL HOURS FOR LAYOUT* : 15
-<img width="1257" height="489" alt="SVHEMATIC FULL PIC" src="https://github.com/user-attachments/assets/0d420072-a74a-4920-b8ff-eec13bcdfa16" />
+###### *TOTAL HOURS FOR LAYOUT* : 15 hr
+<img width="1037" height="366" alt="image" src="https://github.com/user-attachments/assets/7caafe6a-a66c-4d30-a9d9-e0d3e020938f" />
+
 Seeing the schematic finally come together feels really satisfying and everything went extremely well this session. 
 
 #### NOW  IT'S READY FOR THE PCB LAYOUT  , ( BUT FIRS I NEED SOME REST, MY BACK IS PAINING)
@@ -56,6 +61,8 @@ Seeing the schematic finally come together feels really satisfying and everythin
 
 ##  Arranging the PCB
 After assigning the footprints, I moved everything from the schematic into the PCB Editor. At first there were components everywhere with ratsnest lines connecting each other it was very confusing at first when I started arranging the components neatly on the PCB manually according to my Alice layout. So, first I placed the switches according to my Alice layout  because they were the most important parts. After that I arranged the OLED, Rotary encoder, Joystick, Micro controller ( Raspberry Pi Pico ) and the smaller components around them (stabilizer, mounting holes).
+<img width="1073" height="465" alt="image" src="https://github.com/user-attachments/assets/7b749477-4d4e-48d5-9fdc-d83849447b36" />
+
 
 ## Routing the PCB :-
 
@@ -77,7 +84,9 @@ I paid extra attention to the power connections because the RGB LEDs can draw si
 I also had to think about the different power connections, especially the 5V, 3.3V, and l also kept the size of the power line (5v,3v3) a bit thicker 0.3 or 0.4 cause it prevents the melting of the copper
  If l am right
 I tried to keep the power routing clean and make sure the traces had suitable paths 
-And for the GND (Ground Plate) l did not connect it manually thanks to an friend l got to know if we add GND plate it will connect all the GND's all by itself, So that saved me some time rather rha  doing it manually 
+And for the GND (Ground Plate) l did not connect it manually thanks to an friend l got to know if we add GND plate it will connect all the GND's all by itself, So that saved me some time rather than  doing it manually 
+<img width="1056" height="447" alt="image" src="https://github.com/user-attachments/assets/4c08cdeb-8cc4-4430-9f74-943f243f5e17" />
+
 
 - PCB Layers :-
 - F.cu  (Red)
@@ -86,7 +95,7 @@ And for the GND (Ground Plate) l did not connect it manually thanks to an friend
 This made routing much easier,and thees are the layers l used  
 Keyboard Matrix , Rgb , Joystick  , Display -} u can check out my file from folder called  PCB theres a file called PCB Editor downloadit and clear ur doubts
 
-Routing All Connections To  Raspberry Pico PI :-
+##### Routing All Connections To  Raspberry Pico PI :-
 Well this was preety easy , l just need to route the  connections of Keyboard Matrix (Rows and Columns) , Rgb  to  there GPIO pins on the Pico Pi
 ( Joystick and OLED was already done) 
 
@@ -105,9 +114,22 @@ Like this was preety much easy to just selected the layer Edge Cut and put lines
 And after that it was good to go 
 3D (keycaps , hotswapp , display , Joystick )
 I added there 3d models from GrabCAD so l can get a preety good look how my Keyboard going to look and it also helps me to know  how much height should be the walls (boarders) of the case. 
-
+<img width="1061" height="474" alt="image" src="https://github.com/user-attachments/assets/87549082-058a-4c85-8c9d-9cad6780b664" />
+###### *TOTAL HOURS FOR LAYOUT* :  18hr
 ####  Last look of the PCB
-Well , l am relieved and the last step is just to make an case for it 
+<img width="1050" height="480" alt="image" src="https://github.com/user-attachments/assets/faf2e541-6268-4f27-9ddd-df7d07e9a735" />
+## Okay it's me after many  hours later (AGAIN) :- 
+HOWDY FELAS!, I am here to proudly state that I have have FINISHED my PCB  after working Continuously on it well, HURRAY!
+I am not gonna lie it took a lot lot lot of time bruh (MOST WITH THE GD ERROR) , I was about to quit but I am glad that I Didn't. Overall, everything went extremely well this session, and I’m really happy with how much progress I made. Completing the PCB feels like a big step forward for my keyboard project
+Well , l am relieved and the last step is just to make an CASE for it 
 Cant wait to finish it  and look how it turns out, supper dupper excited.      
-SO LETS GET GOING ,BYE      
+SO LETS GET GOING ,BYE    
 
+## Entry 3 — THE CASE
+Well I got to pick a MOUNT first cause there's a lot,
+                                                                                                                                       
+<img width="1080" height="896" alt="image" src="https://github.com/user-attachments/assets/38117efe-1d2c-481f-8601-7db5a8cde2fd" />
+                                                                                                                                      
+I will go with The GASKET MOUNT cause it helps the switches to sound better while typing ig. What's the points of having an Mechanical Keyboard if u don't have the fell while typing , ANYWAYS, TO THE DESIGNIG PART 
+ ### - DESIGNIG THE CASE :-
+ For making the case I am using software cause its good and I know some basics of it
