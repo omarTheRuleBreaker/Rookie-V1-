@@ -15,3 +15,7 @@ also #SHOUTOUT to @Flyingfish he saved me some time AND also THX to them who wer
   
 I learned how to turn a keyboard schematic into a proper PCB and how important it is to check every connection before moving forward. I also learned how to arrange components properly, route traces, use vias, and fix DRC errors in KiCad. Working on this project helped me understand more about PCB design and how all the different parts of a keyboard connect and work together.
 gracias!
+
+#### NOTE :-
+If u want step by step PROCESS to make a simple easy Keyboard which include's Everything, SO just follow the  #### KEEB DOCS
+HERE'S THE LINKE { https://keeb.hackclub.com/docs/getting-started/ }
