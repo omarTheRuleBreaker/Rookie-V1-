@@ -1,7 +1,7 @@
 # Keyboard Build Journal
+
 ## Entry 1 — Figuring out hardware and layout
 Date: 7/25/2026
-
 I started planning out the layout for my keyboard. I really didn't want a  keyboard where your hand are kept TOO close and become sweaty, So I found a layout that have some space between, but at the same time, I wanted to maintain most of the function that I would have on a conventional laptop. So, I settled with a 65% layout, I used the reference picture below. its called the ALICE LAYOUT.
 I also made my  layout in https://www.keyboard-layout-editor.com/                                                                            
   HERE'S THE KEYBORAD **RAW DATA** :- IT WILL BE IN FOLDERS ON LEFT U CAN CHECK IT OUT OR DO SOME ExERIMENT WITH IT .
@@ -107,7 +107,9 @@ Overlapping or conflicting tracks
 
 I then went back and fixed the errors that appeared It was no sweat just some text were intersecting with dome part and some layer like dots that l mistakenly added just delete those 
 At this point, the PCB was starting to look GREAT 👍🏻 
-Next step: To add its shape
+<img width="662" height="524" alt="image" src="https://github.com/user-attachments/assets/9213d0af-47b2-4bdf-aa21-928f8f199b56" />
+
+#### Next step: To add its shape
 
 #### SHAPE OF THE PCB :-
 Like this was preety much easy to just selected the layer Edge Cut and put lines accordingly to my reference pic at top , l can also just make it an rectangular box but i just chose that cause while l design my case it will give me an idea for the perimeter ig
