@@ -134,4 +134,4 @@ Well I got to pick a MOUNT first cause there's a lot,
                                                                                                                                       
 I will go with The GASKET MOUNT cause it helps the switches to sound better while typing ig. What's the points of having an Mechanical Keyboard if u don't have the fell while typing , ANYWAYS, TO THE DESIGNIG PART 
  ### - DESIGNIG THE CASE :-
- For making the case I am using software cause its good and I know some basics of it
+ For making the case I am using software called ____________  u may be familiar with it cause and I know some basics of it and also I am following the guide (DOCS) of HACKPAD just the CASE part
